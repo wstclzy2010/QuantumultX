@@ -1,9 +1,9 @@
 const $ = new Env('百度签到')
-$.VAL_cookies = $.getdata('chavy_cookie_tieba') || $.getdata('CookieTB')
+$.VAL_cookies = 'sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%22176d6af0b2f10f2-0b069ba6bc62db8-2c2d6a20-304500-176d6af0b30eae%22%2C%22%24device_id%22%3A%22176d6af0b2f10f2-0b069ba6bc62db8-2c2d6a20-304500-176d6af0b30eae%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; BAIDUCUID=_aSiijihH8gH82tz0aScf_8vSfg58Sf6_u-gijizS8lg8H8GgiHqfgfs3a0tfWRAMW2mA; BAIDUZID=jB13VEGlel8RQaTBcvf1x8QZl0c6QoV0udfCjA0G-jxPn54iZkPeeqnYWHMu4I7OmugVzAuX6pvKh1A59DMDZJA; BDUSS=xTSmdpcllVOXVhbnZEdTVNcFUxYjBZNFJJMC0zVmViQTlrfmFVTUpTR0l6Z3RnSUFBQUFBJCQAAAAAAAAAAAEAAADoN2IPd3N0Y2x6eTIwMTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIhB5F-IQeRfZk; CUID=45A74DE1A7F0636AC414458F030097A4; TBBRAND=iPhone; _client_version=11.3.2; Hm_lvt_98b9d8c2fd6608d564bf2ac2ae642948=1609136503,1610288876,1610497816; Hm_lvt_7d6994d7e4201dd18472dd1ef27e6217=1609825134,1610497789; BAIDUID=B39A501BAC9973AB8ABE40A9D9AB347E:FG=1; BAIDU_WISE_UID=wapp_1609825133077_992'
 
 $.CFG_isOrderBars = $.getdata('CFG_tieba_isOrderBars') || 'false' // 1: 经验排序, 2: 连签排序
-$.CFG_maxShowBars = $.getdata('CFG_tieba_maxShowBars') * 1 || 15 //每次通知数量
-$.CFG_maxSignBars = $.getdata('CFG_tieba_maxSignBars') * 1 || 5 // 每次并发执行多少个任务
+$.CFG_maxShowBars = $.getdata('CFG_tieba_maxShowBars') * 1 || 100 //每次通知数量
+$.CFG_maxSignBars = $.getdata('CFG_tieba_maxSignBars') * 1 || 10 // 每次并发执行多少个任务
 $.CFG_signWaitTime = $.getdata('CFG_tieba_signWaitTime') * 1 || 2000 // 每次并发间隔时间 (毫秒)
 
 !(async () => {
